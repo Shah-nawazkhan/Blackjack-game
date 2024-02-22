@@ -1,38 +1,60 @@
-.App {
+body {
+  background-color: #4d7cab;
+}
+.kl {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.ma {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.playerside, .dealerside {
+  padding: 2%;
+  background-color: #ADEFD1;
+  color: #00203F;
+  width: fit-content;
+  margin: 2%;
+  border-radius: 35px;
 }
 
-@keyframes App-logo-spin {
+.buttons {
+  margin-top: 20px;
+}
+
+button {
+  background-color: #ADEFD1;
+  color: #00203F;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #3f3b00;
+  color: #ADEFD1;
+}
+
+.winner-message {
+  color: #FF5555;
+  font-size: 30px;
+  font-weight: bolder;
+  margin-top: 20px;
+  animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
   from {
-    transform: rotate(0deg);
+    opacity: 0;
   }
+
   to {
-    transform: rotate(360deg);
+    opacity: 1;
   }
 }
